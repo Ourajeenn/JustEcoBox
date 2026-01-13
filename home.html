@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustEcoBox - Le bon repas avant la date</title>
+    <meta name="description" content="Le bon repas avant la date. Sauve des paniers anti-gaspi à prix justes.">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="carousel-chatbot.css">
+    <link rel="stylesheet" href="centering-utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon/icon-512.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-nav">
+                <img src="images/logo.png" alt="JustEcoBox" class="logo-nav-img">
+                <span class="logo-nav-text">JustEcoBox</span>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#comment" class="nav-link">Comment ça marche</a></li>
+                <li><a href="#paniers" class="nav-link">Les paniers</a></li>
+                <li><a href="#pourquoi" class="nav-link">Pourquoi JustEcoBox</a></li>
+                <li><a href="#partenaires" class="nav-link">Partenaires</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="index.html" class="btn-primary">Inscription</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1️⃣ Accueil - La porte d'entrée -->
+    <section class="hero-minimal" id="accueil">
+        <div class="hero-content-minimal">
+            <img src="images/logo.png" alt="JustEcoBox" class="hero-logo-large">
+            <h1 class="hero-title-minimal">Le bon repas avant la date</h1>
+            <p class="hero-subtitle-minimal">Zéro blabla. Juste l'essentiel.</p>
+            <div class="button-wrapper-center">
+                <a href="#paniers" class="btn-hero-large">Découvrir les paniers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2️⃣ Comment ça marche - Parce que personne n'aime deviner -->
+    <section class="how-section" id="comment">
+        <div class="container">
+            <p class="section-intro">Parce que personne n'aime deviner.</p>
+            <h2 class="section-title-clean">Comment ça marche</h2>
+
+            <div class="steps-clean">
+                <div class="step-clean">
+                    <div class="step-number">1</div>
+                    <h3>Choisir un panier</h3>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <div class="step-clean">
+                    <div class="step-number">2</div>
+                    <h3>Réserver sur l'app</h3>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <div class="step-clean">
+                    <div class="step-number">3</div>
+                    <h3>Récupérer en magasin</h3>
+                </div>
+            </div>
+
+            <p class="section-tagline">Simple. Presque poétique.</p>
+        </div>
+    </section>
+
+    <!-- Carrousel de Paniers Disponibles -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title-clean">Paniers disponibles aujourd'hui</h2>
+            <p class="section-subtitle-carousel">Découvrez notre sélection du jour</p>
+
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-card">
+                            <img src="images/panier_fraicheur_1767866913756.png" alt="Panier Fraîcheur"
+                                class="carousel-img">
+                            <div class="carousel-content">
+                                <h3>Panier Fraîcheur</h3>
+                                <p>Légumes, fruits et pain frais</p>
+                                <div class="carousel-price">
+                                    <span class="price-new">4,99€</span>
+                                    <span class="price-old">12,00€</span>
+                                </div>
+                                <span class="carousel-badge">-58%</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <img src="images/panier_boulangerie_1767866929658.png" alt="Panier Boulangerie"
+                                class="carousel-img">
+                            <div class="carousel-content">
+                                <h3>Panier Boulangerie</h3>
+                                <p>Pains, viennoiseries et pâtisseries</p>
+                                <div class="carousel-price">
+                                    <span class="price-new">3,50€</span>
+                                    <span class="price-old">9,00€</span>
+                                </div>
+                                <span class="carousel-badge">-61%</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <img src="images/panier_complet_1767866946881.png" alt="Panier Complet"
+                                class="carousel-img">
+                            <div class="carousel-content">
+                                <h3>Panier Complet</h3>
+                                <p>Assortiment varié pour toute la semaine</p>
+                                <div class="carousel-price">
+                                    <span class="price-new">7,99€</span>
+                                    <span class="price-old">20,00€</span>
+                                </div>
+                                <span class="carousel-badge">-60%</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <img src="images/panier_fruits_1767866963543.png" alt="Panier Fruits" class="carousel-img">
+                            <div class="carousel-content">
+                                <h3>Panier Fruits</h3>
+                                <p>Sélection de fruits de saison</p>
+                                <div class="carousel-price">
+                                    <span class="price-new">3,99€</span>
+                                    <span class="price-old">10,00€</span>
+                                </div>
+                                <span class="carousel-badge">-60%</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <img src="images/panier_epicerie_1767866980805.png" alt="Panier Épicerie"
+                                class="carousel-img">
+                            <div class="carousel-content">
+                                <h3>Panier Épicerie</h3>
+                                <p>Produits secs et conserves</p>
+                                <div class="carousel-price">
+                                    <span class="price-new">5,99€</span>
+                                    <span class="price-old">15,00€</span>
+                                </div>
+                                <span class="carousel-badge">-60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ Les paniers - Le cœur qui bat -->
+    <section class="baskets-section" id="paniers">
+        <div class="container">
+            <p class="section-intro">Le cœur qui bat.</p>
+            <h2 class="section-title-clean">Les paniers</h2>
+
+            <div class="baskets-grid-clean">
+                <div class="basket-card-clean">
+                    <div class="basket-icon-large">🌅</div>
+                    <h3>Paniers du jour</h3>
+                    <p>Fraîcheur garantie. Disponibilité limitée.</p>
+                </div>
+
+                <div class="basket-card-clean">
+                    <div class="basket-icon-large">🎓</div>
+                    <h3>Paniers étudiants</h3>
+                    <p>Prix adaptés. Impact maximal.</p>
+                </div>
+
+                <div class="basket-card-clean">
+                    <div class="basket-icon-large">♻️</div>
+                    <h3>Bons plans anti-gaspi</h3>
+                    <p>Surprises quotidiennes. Économies réelles.</p>
+                </div>
+            </div>
+
+            <p class="section-tagline">Là où l'envie devient action.</p>
+            <div class="button-wrapper-center">
+                <a href="index.html" class="btn-secondary-large">Voir tous les paniers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ Pourquoi JustEcoBox - La raison d'y croire -->
+    <section class="why-section" id="pourquoi">
+        <div class="container">
+            <p class="section-intro">La raison d'y croire.</p>
+            <h2 class="section-title-clean">Pourquoi JustEcoBox ?</h2>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🌍</div>
+                    <h3>Anti-gaspillage</h3>
+                    <p>Chaque panier sauvé est un pas vers un monde meilleur.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">💰</div>
+                    <h3>Prix justes</h3>
+                    <p>Qualité accessible. Dignité préservée.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">🌱</div>
+                    <h3>Impact écologique</h3>
+                    <p>Réduire le CO2. Protéger la planète.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">🤝</div>
+                    <h3>Engagement local</h3>
+                    <p>Soutenir nos commerçants. Renforcer nos quartiers.</p>
+                </div>
+            </div>
+
+            <p class="section-tagline">On parle au cerveau et à la conscience.</p>
+        </div>
+    </section>
+
+    <!-- 5️⃣ Pour les partenaires - Sobre, sérieux, crédible -->
+    <section class="partners-section" id="partenaires">
+        <div class="container">
+            <p class="section-intro">Sobre, sérieux, crédible.</p>
+            <h2 class="section-title-clean">Pour les partenaires</h2>
+
+            <div class="partners-list">
+                <div class="partner-type">
+                    <h3>🏢 Hypermarchés</h3>
+                    <p>Valorisez vos invendus. Optimisez vos flux.</p>
+                </div>
+
+                <div class="partner-type">
+                    <h3>🏪 Commerçants</h3>
+                    <p>Réduisez vos pertes. Attirez de nouveaux clients.</p>
+                </div>
+
+                <div class="partner-type">
+                    <h3>🏛️ Collectivités</h3>
+                    <p>Engagez votre territoire. Impactez durablement.</p>
+                </div>
+            </div>
+
+            <p class="section-tagline">Ici, on construit l'avenir ensemble.</p>
+            <div class="button-wrapper-center">
+                <a href="#contact" class="btn-secondary-large">Devenir partenaire</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6️⃣ À propos - L'âme -->
+    <section class="about-section" id="apropos">
+        <div class="container">
+            <p class="section-intro">L'âme.</p>
+            <h2 class="section-title-clean">À propos</h2>
+
+            <div class="about-content">
+                <div class="about-block">
+                    <h3>Notre histoire</h3>
+                    <p>Née d'une conviction simple : le gaspillage alimentaire n'est pas une fatalité. En 2026, nous
+                        avons lancé JustEcoBox pour connecter ceux qui ont trop avec ceux qui n'ont pas assez.</p>
+                </div>
+
+                <div class="about-block">
+                    <h3>Notre vision</h3>
+                    <p>Un monde où chaque repas compte. Où la qualité n'est pas un luxe. Où consommer mieux devient
+                        naturel.</p>
+                </div>
+
+                <div class="about-block">
+                    <h3>Nos valeurs</h3>
+                    <ul class="values-list">
+                        <li><strong>Transparence</strong> - Pas de promesses creuses</li>
+                        <li><strong>Impact</strong> - Des actes, pas des mots</li>
+                        <li><strong>Accessibilité</strong> - Pour tous, sans exception</li>
+                        <li><strong>Solidarité</strong> - Ensemble, toujours</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="section-tagline">Parce qu'une marque sans récit, c'est une coquille vide.</p>
+        </div>
+    </section>
+
+    <!-- 7️⃣ Contact - Dernier refuge -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <p class="section-intro">Dernier refuge.</p>
+            <h2 class="section-title-clean">Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Nous écrire</h3>
+                    <p>Une question ? Une suggestion ?</p>
+                    <a href="mailto:contact@justecobox.fr" class="contact-link">contact@justecobox.fr</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-handshake contact-icon"></i>
+                    <h3>Devenir partenaire</h3>
+                    <p>Rejoignez le mouvement.</p>
+                    <a href="mailto:partenaires@justecobox.fr" class="contact-link">partenaires@justecobox.fr</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-life-ring contact-icon"></i>
+                    <h3>Support</h3>
+                    <p>Besoin d'aide ?</p>
+                    <a href="mailto:support@justecobox.fr" class="contact-link">support@justecobox.fr</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bot IA Interactif -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-robot"></i>
+            <span class="chatbot-pulse"></span>
+        </button>
+
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <i class="fas fa-robot"></i>
+                    <div>
+                        <h4>JEB</h4>
+                        <span class="chatbot-status">En ligne</span>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Bonjour ! Je suis JEB, votre assistant JustEcoBox. Comment puis-je vous aider aujourd'hui ?
+                        </p>
+                        <div class="quick-replies">
+                            <button class="quick-reply" data-question="Comment ça marche ?">Comment ça marche ?</button>
+                            <button class="quick-reply" data-question="Quels sont les prix ?">Quels sont les prix
+                                ?</button>
+                            <button class="quick-reply" data-question="Où trouver les paniers ?">Où trouver les paniers
+                                ?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbotInput" placeholder="Posez votre question..." />
+                <button id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Minimal -->
+    <footer class="footer-minimal">
+        <div class="container">
+            <div class="footer-content-minimal">
+                <div class="footer-logo-minimal">
+                    <img src="images/logo.png" alt="JustEcoBox" class="footer-logo-img">
+                    <span class="footer-logo-text">JustEcoBox</span>
+                </div>
+
+                <div class="footer-links-minimal">
+                    <a href="#">CGU</a>
+                    <a href="#">Confidentialité</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+
+                <div class="footer-social-minimal">
+                    <a href="#" class="social-link-minimal"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link-minimal"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link-minimal"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom-minimal">
+                <p>&copy; 2026 JustEcoBox. Le bon repas avant la date.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
